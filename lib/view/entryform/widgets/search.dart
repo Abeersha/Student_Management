@@ -5,26 +5,26 @@ import 'package:hive/hive.dart';
 import 'package:student_app/model/student_model.dart';
 import 'package:student_app/view/entryform/widgets/details_page.dart';
 
-class Search extends SearchDelegate{
+class Search extends SearchDelegate {
   @override
   List<Widget>? buildActions(BuildContext context) {
-  
-
-     return [
+    return [
       IconButton(
         onPressed: () {
           query = '';
         },
-        icon: Icon(Icons.clear),
+        icon: const Icon(Icons.clear),
       ),
     ];
   }
 
   @override
   Widget? buildLeading(BuildContext context) {
-  return IconButton(onPressed: (){
-    close(context,query);
-  }, icon:  Icon(Icons.arrow_back));
+    return IconButton(
+        onPressed: () {
+          close(context, query);
+        },
+        icon: const Icon(Icons.arrow_back));
   }
 
   @override
@@ -111,11 +111,4 @@ class Search extends SearchDelegate{
       ),
     );
   }
-  }
-
-
-
-
-
-
-  
+}

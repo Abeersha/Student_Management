@@ -1,15 +1,15 @@
-import 'dart:io';
+
 
 import 'package:flutter/material.dart';
 import 'package:hive_flutter/hive_flutter.dart';
-import 'package:path_provider/path_provider.dart';
+
 import 'package:student_app/view/home/homescreen.dart';
 import 'package:student_app/model/student_model.dart';
 
 
 void main() async{
   WidgetsFlutterBinding.ensureInitialized();
-  final directory =await getApplicationDocumentsDirectory();
+  // final directory =await getApplicationDocumentsDirectory();
   await Hive.initFlutter();
 
   

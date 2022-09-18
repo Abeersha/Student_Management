@@ -25,7 +25,7 @@ class TextFormFieldWidget extends StatelessWidget {
         
           prefixIcon: Icon(icon),
           labelText: text,
-          border: OutlineInputBorder()),
+          border: const OutlineInputBorder()),
       keyboardType: type,
     );
   }
